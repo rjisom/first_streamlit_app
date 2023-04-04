@@ -9,3 +9,5 @@ streamlit.text('Some streamlit Text')
 streamlit.text('Some more streamlit text')
 
 streamlit.text('Look! emojis! 🥣 🥗 🐔 🥑🍞')
+
+streamlit.header('🍌🥭 Fruit Header! 🥝🍇')
