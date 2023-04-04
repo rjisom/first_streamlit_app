@@ -51,10 +51,12 @@ streamlit.dataframe(my_data_rows)
 # Search for fruits dynamically
 fruit_to_add = streamlit.text_input('What fruit would you like to add?')
 
-my_cur.execute("INSERT into fruit_load_list values "+f"('{fruit_to_add}')")
+if (len(fruit_to_add) != 0):
+  my_cur.execute("INSERT into fruit_load_list values "+f"('{fruit_to_add}')")
+  streamlit.write('Thanks for adding ', fruit_to_add)
 #.execute("... WHERE my_column = %(name)s", {"name": value})
 
 #my_data_rows.append(fruit_to_add)
 
-streamlit.write('Thanks for adding ', fruit_to_add)
+
 
