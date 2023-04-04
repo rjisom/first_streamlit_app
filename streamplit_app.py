@@ -48,3 +48,8 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
+# Search for fruits dynamically
+fruit_to_add = streamlit.text_input('What fruit would you like to add?')
+my_cur.execute("INSERT " + fruit_to_add + "into fruit_load_list")
+streamlit.write('Thanks for adding ', fruit_to_add)
+
