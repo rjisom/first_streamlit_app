@@ -7,3 +7,5 @@ streamlit.header('This is a streamlist header')
 streamlit.text('Some streamlit Text')
 
 streamlit.text('Some more streamlit text')
+
+streamlist.text('Look! emojis! 🥣 🥗 🐔 🥑🍞')
